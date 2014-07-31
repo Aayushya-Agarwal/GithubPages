@@ -1,5 +1,20 @@
 * {
-	font-family: 'Oswald', sans-serif;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+#email {
+	text-align: center;
+	font-size: 28px;
+}
+
+#checkbox {
+	/*background: url() left top no-repeat;*/
+}
+
+#submit {
+	background-color: #000000;
+	color: white;
+	border: none;
 }
 
 #footer {
