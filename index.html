@@ -2,38 +2,48 @@
 <html>
 <head>
   <title>hanaHaus</title>
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
   <script type="text/javascript" src="js/d3.v3.min.js"></script>
   <script type="text/javascript" src="js/skrollr.min.js"></script>
-  <link href="css/style.css" type="text/css" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700italic' rel='stylesheet' type='text/css'>
+  <link href="css/style2.css" type="text/css" rel="stylesheet">
+
 </head>
 <body>
 <div class="home">
   <svg width="100%" height ="100%" id="svg"></svg>
-  <img src="img/arrow.png" data-0="opacity:1;" data-100="opacity:0"></img>
+  <img src="img/arrow.png"></img>
   
   
 </div>
-<div class="info" data-300="height[swing]:500px" data-800="height[swing]:678px" data-1500="height[swing]:500px">
+<div class="info">
   
-  <img id="side_logo" src="img/side_logo.png" alt="HanaHaus" data-0="margin-top[swing]:0px;" data-400="margin-top[swing]:-150px;" data-800="margin-top[swing]:-150px;" data-1500="margin-top[swing]:-500px">
-
+  
   <div class="summary">
+    <div class="question">
+      <h2>What is HanaHaus?</h2>
+    </div>
+    <div class="seperator" data-150="margin-top:-500px;height:800px" data-600="margin-top:0px;height:0px"></div>
+    <div class="hollow">
+      <img src="img/hex_hollow.png">
+      <img src="img/hex_hollow.png">
+      <img src="img/hex_hollow.png">
+    </div>
+    <div class="lines" data-200="margin-top:-550px;padding-top:550px" data-600="margin-top:20px;padding-top:0px;">
+      <h3 data-300="margin-top[swing]:700px" data-1000="margin-top:0px">café</h3>
+      <h3 data-600="margin-top[swing]:600px" data-1300="margin-top:-150px">co-working space</h3>
+      <h3 data-900="margin-top[swing]:600px" data-1600="margin-top:-200px">public forum</h3>
+    </div>
     
-      <p><span data-400="opacity:0" data-600="opacity:1" data-800="opacity:1" data-900="opacity:0">café</span></p>
-    
-    
-      <p><span data-500="opacity:0" data-700="opacity:1" data-900="opacity:1" data-1000="opacity:0">co-working space</span></p>
-    
-    
-      <p><span data-600="opacity:0" data-800="opacity:1" data-1000="opacity:1" data-1100="opacity:0">public forum</span></p>
     
   </div>
-</div>
-<div class="more" data-800="height:0px" data-1000="height:60px">
+</div> 
+<div class="more" >
   <h3><i><a href="#">Find out more &#10095;&#10095;</a></i></h3>
 </div>
-<div class="subscribe" data-800="background-position:center 100px;" data-1200="background-position:center -35px;">
+<div class="seperator" data-1900="margin-top:-300px;height:800px" data-2200="margin-top:0px;height:50px"></div>
+<div class="subscribe" data-1700="margin-top:800px" data-2400="margin-top:0px">
   <form>
     Enter your email below and get shortlisted to our opening party
     <input type="checkbox" name="subscribe" class="css-checkbox"><label class="css-label">Subscribe to news and updates from HanaHaus</label><br>
@@ -43,7 +53,7 @@
   
 
 </div>
-<div class="social" data-1100="margin-top:300px" data-1300="margin-top:0">
+<div class="social" data-2400="margin-top:300px" data-3000="margin-top:0">
   <img src="img/social.png" alt="">
 </div>
 <script src="js/script.js"></script>
