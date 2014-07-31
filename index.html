@@ -1,72 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+<html>
+<head>
+  <title>hanaHaus</title>
+  <script type="text/javascript" src="js/d3.v3.min.js"></script>
+  <script type="text/javascript" src="js/skrollr.min.js"></script>
+  <link href="css/style.css" type="text/css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,700italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="home">
+  <svg width="100%" height ="100%" id="svg"></svg>
+  <img src="img/arrow.png" data-0="opacity:1;" data-100="opacity:0"></img>
+  
+  
+</div>
+<div class="info" data-300="height[swing]:500px" data-800="height[swing]:678px" data-1500="height[swing]:500px">
+  
+  <img id="side_logo" src="img/side_logo.png" alt="HanaHaus" data-0="margin-top[swing]:0px;" data-400="margin-top[swing]:-150px;" data-800="margin-top[swing]:-150px;" data-1500="margin-top[swing]:-500px">
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <div class="summary">
     
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap-theme.css">
+      <p><span data-400="opacity:0" data-600="opacity:1" data-800="opacity:1" data-900="opacity:0">café</span></p>
+    
+    
+      <p><span data-500="opacity:0" data-700="opacity:1" data-900="opacity:1" data-1000="opacity:0">co-working space</span></p>
+    
+    
+      <p><span data-600="opacity:0" data-800="opacity:1" data-1000="opacity:1" data-1100="opacity:0">public forum</span></p>
+    
+  </div>
+</div>
+<div class="more" data-800="height:0px" data-1000="height:60px">
+  <h3><i><a href="#">Find out more &#10095;&#10095;</a></i></h3>
+</div>
+<div class="subscribe" data-800="background-position:center 100px;" data-1200="background-position:center -35px;">
+  <form>
+    Enter your email below and get shortlisted to our opening party
+    <input type="checkbox" name="subscribe" class="css-checkbox"><label class="css-label">Subscribe to news and updates from HanaHaus</label><br>
+     <input type="text" name="email"><br>
+     <input type="button" value="Enter">
+  </form>
+  
 
-    <!-- Optional theme -->
-    <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-     -->
-    <!-- Latest compiled and minified JavaScript -->
-    <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-     -->
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-  <script language="javascript">
-    var http = require('http');
-    $scope.subscribe = function(){
-
-
-
-    }
-
-
-  </script>
-
-
-  </head>
-  <body>
-    <h1>Hello, world! The world is my oyster. Come to me now.</h1>
-    <img src='resources/hanahaus.png' width='100%'>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
-  <footer>
-  	<div style="float:left; padding-bottom:100px; width:50%">
-  		<h1>Spread the word</h1>
-  	</div>
-  	<div style="float:right; padding-bottom:100px; width:50%">
-  		<h2>Ridiculous boxed</h2>
-  	</div>
-
-      <div style="display:table-row;">
-        <div style="display:table-cell; padding:10px 0; vertical-align:top;">
-          <form name="form" >
-            <div class="input-group">
-              <input id="email" type="email" class="form-control" placeholder="Email me" />
-              <span class="input-group-btn">
-                <button type="submit" onclick="subscribe()" class="btn btn-default">I'm curious</button>
-              </span>
-            </div>
-          </form>
-        </div>
-      </div>      
-  </footer>
+</div>
+<div class="social" data-1100="margin-top:300px" data-1300="margin-top:0">
+  <img src="img/social.png" alt="">
+</div>
+<script src="js/script.js"></script>
+<script  type="text/javascript">
+  var s = skrollr.init({
+    forceHeight: false
+});
+</script>
+</body>
 </html>
