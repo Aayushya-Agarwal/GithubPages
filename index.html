@@ -69,15 +69,36 @@
   <div class="seperator" data-scroll-reveal="ease move 500px"></div>
   <div class="subscribe" data-scroll-reveal="ease move 400px">
  <!--  <div class="subscribe" data-1700="margin-top:800px" data-2400="margin-top:0px"> -->
-  <form>
-    Enter your email below and get shortlisted to our opening party
-    <input id="checkbox"type="checkbox" name="subscribe" class="css-checkbox"><label class="css-label">Subscribe to news and updates from HanaHaus</label><br>
-     <input id="email"type="text" name="email"><br>
-     <input onclick="subscribe()" type="button" value="Enter">
+  <form action="javascript:subscribe();">
+    Enter your email below and get shortlisted to our opening party<br>
+    <input type="checkbox" name="checkbox" id="checkbox" class="css-checkbox" checked><label for="checkbox" class="css-label">Subscribe to news and updates from HanaHaus</label><br>
+    <input id="email" type="text" name="email"><br>
+    <button>Enter</button><br>
+    <label id="subscribed">Subscription successful! More details to come.</label>
   </form>
-  
+    
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+document.getElementById("subscribed").style.display="none";
+
+  $(document).ready(function(){
+    $("button").click(function(){
+      var url;
+      if (checkbox.checked) {
+        url = "https://us8.api.mailchimp.com/2.0/lists/subscribe.json?apikey=b40267513807301f7bd55b986fb7f43b-us8&id=70489ca485&email[email]=" + email.value + "&double_optin=false&update_existing=true";
+      } else {
+        url = "https://us8.api.mailchimp.com/2.0/lists/subscribe.json?apikey=b40267513807301f7bd55b986fb7f43b-us8&id=a66343854e&email[email]=" + email.value + "&double_optin=false&update_existing=true";
+      }
+      var xmlhttp = new XMLHttpRequest();
+      xmlhttp.open("POST", url);
+      xmlhttp.send();
+    document.getElementById("subscribed").style.display="block";
+    });
+  });
+</script>
 
 </div>
+
 <div class="social" data-scroll-reveal="ease move 200px">
 <!-- <div class="social" data-2400="margin-top:300px" data-3000="margin-top:0"> -->
   <!-- <img src="img/social.png" alt=""> -->
