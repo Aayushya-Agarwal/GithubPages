@@ -69,32 +69,40 @@
   <div class="seperator" data-scroll-reveal="ease move 500px"></div>
   <div class="subscribe" data-scroll-reveal="ease move 400px">
  <!--  <div class="subscribe" data-1700="margin-top:800px" data-2400="margin-top:0px"> -->
-  <form action="javascript:subscribe();">
-    Enter your email below and get shortlisted to our opening party<br>
-    <input type="checkbox" name="checkbox" id="checkbox" class="css-checkbox" checked><label for="checkbox" class="css-label">Subscribe to news and updates from HanaHaus</label><br>
-    <input id="email" type="text" name="email"><br>
-    <button>Enter</button><br>
-    <label id="subscribed">Subscription successful! More details to come.</label>
-  </form>
-    
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script>
-document.getElementById("subscribed").style.display="none";
 
-  $(document).ready(function(){
-    $("button").click(function(){
-      var url;
-      if (checkbox.checked) {
-        url = "https://us8.api.mailchimp.com/2.0/lists/subscribe.json?apikey=b40267513807301f7bd55b986fb7f43b-us8&id=70489ca485&email[email]=" + email.value + "&double_optin=false&update_existing=true";
-      } else {
-        url = "https://us8.api.mailchimp.com/2.0/lists/subscribe.json?apikey=b40267513807301f7bd55b986fb7f43b-us8&id=a66343854e&email[email]=" + email.value + "&double_optin=false&update_existing=true";
-      }
-      var xmlhttp = new XMLHttpRequest();
-      xmlhttp.open("POST", url);
-      xmlhttp.send();
-    document.getElementById("subscribed").style.display="block";
-    });
-  });
+  <!-- Begin MailChimp Signup Form -->
+  <div id="mc_embed_signup">
+  <form action="javascript:subscribe();" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <h4>Enter your email below to get shortlisted for our opening party</h4>
+  <div class="mc-field-group">
+    <input type="checkbox" id="checkbox" checked><label for="checkbox">Subscribe to our mailing list to receive emails and updates.</label><br>
+    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"><br>
+  </div>
+    <div id="mce-responses" class="clear">
+      <div class="response" id="mce-error-response" style="display:none"></div>
+      <div class="response" id="mce-success-response" style="display:none"></div>
+    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+      <div style="position: absolute; left: -5000px;"><input type="text" name="b_baa41cbf856c248fe15631de0_70489ca485" tabindex="-1" value=""></div>
+      <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+  </form>
+  </div>
+
+
+
+
+<!--End mc_embed_signup-->
+
+<script>
+  function subscribe() {
+    var url;
+    console.log("#checkbox".checked);
+    if ("#checkbox".checked) {
+      url = "http://github.us8.list-manage.com/subscribe/post?u=baa41cbf856c248fe15631de0&amp;id=70489ca485";
+    } else {
+      url = "http://github.us8.list-manage.com/subscribe/post?u=baa41cbf856c248fe15631de0&amp;id=a66343854e";
+    }
+    return url;
+  }
 </script>
 
 </div>

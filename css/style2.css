@@ -244,6 +244,11 @@ input[type=checkbox].css-checkbox:checked + label.css-label {
 	font-size: 15px;
 }
 
+#validemail {
+	color: red;
+	font-size: 15px;
+}
+
 label.css-label {
 	background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_593adae689b6e344cda220b0a046cec5.png);
 	-webkit-touch-callout: none;
