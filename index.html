@@ -17,6 +17,7 @@
   
   
 </div>
+
 <div class="start" data-300="height[swing]:500px" data-800="height[swing]:678px" data-1500="height[swing]:500px">
   
   <img id="side_logo" src="img/side_logo.png" alt="HanaHaus" data-0="margin-top[swing]:0px;" data-400="margin-top[swing]:-150px;" data-800="margin-top[swing]:-150px;" data-1500="margin-top[swing]:-500px">
@@ -40,26 +41,33 @@
     <div class="question">
       <h2>What is HanaHaus?</h2>
     </div>
-    <div class="seperator" data-150="margin-top:-500px;height:800px" data-600="margin-top:0px;height:0px"></div>
+<!--     <div class="seperator" data-1450="margin-top:-500px;height:800px" data-1100="margin-top:0px;height:0px"></div>
+ -->    
+    <div class="seperator" data-scroll-reveal="ease move 500px"></div>
     <div class="hollow">
-      <img src="img/hex_hollow.png">
-      <img src="img/hex_hollow.png">
-      <img src="img/hex_hollow.png">
+      <img data-scroll-reveal="enter left move 300px, after 0.3s" src="img/hex_hollow.png">
+      <img data-scroll-reveal="enter right move 500px, after 0.3s" src="img/hex_hollow.png">
+      <img data-scroll-reveal="enter right move 500px, after 0.3s" src="img/hex_hollow.png">
     </div>
-    <div class="lines" data-200="margin-top:-550px;padding-top:550px" data-600="margin-top:20px;padding-top:0px;">
+<!--     <div class="lines" data-200="margin-top:-550px;padding-top:550px" data-600="margin-top:20px;padding-top:0px;">
       <h3 data-300="margin-top[swing]:700px" data-1000="margin-top:0px">café</h3>
       <h3 data-600="margin-top[swing]:600px" data-1300="margin-top:-150px">co-working space</h3>
       <h3 data-900="margin-top[swing]:600px" data-1600="margin-top:-200px">public forum</h3>
-    </div>
+    </div> -->
     
+    <div class ="lines" >
+      <h3 data-scroll-reveal="after 2s, ease-in 200px and reset over .66s">café</h3>
+      <h3 data-scroll-reveal="ease right move 200px, after 0.3s and reset over 1.0s">co-working space</h3>
+      <h3 data-scroll-reveal="ease left move 200px, after 0.3s and reset over 2.0s">public forum</h3>
+    </div>
     
   </div>
 </div> 
-<div class="more" >
-  <h3><i><a href="#">Find out more &#10095;&#10095;</a></i></h3>
-</div>
-<div class="seperator" data-1900="margin-top:-300px;height:800px" data-2200="margin-top:0px;height:50px"></div>
-<div class="subscribe" data-1700="margin-top:800px" data-2400="margin-top:0px">
+<!-- <div class="seperator" data-1900="margin-top:-300px;height:800px" data-2200="margin-top:0px;height:50px"></div>
+ -->
+  <div class="seperator" data-scroll-reveal="ease move 500px"></div>
+  <div class="subscribe" data-scroll-reveal="ease move 400px">
+ <!--  <div class="subscribe" data-1700="margin-top:800px" data-2400="margin-top:0px"> -->
   <form>
     Enter your email below and get shortlisted to our opening party
     <input type="checkbox" name="subscribe" class="css-checkbox"><label class="css-label">Subscribe to news and updates from HanaHaus</label><br>
@@ -69,7 +77,8 @@
   
 
 </div>
-<div class="social" data-2400="margin-top:300px" data-3000="margin-top:0">
+<div class="social" data-scroll-reveal="ease move 300px">
+<!-- <div class="social" data-2400="margin-top:300px" data-3000="margin-top:0"> -->
   <img src="img/social.png" alt="">
 </div>
 <script src="js/script.js"></script>
@@ -78,5 +87,11 @@
     forceHeight: false
 });
 </script>
+  <script src='js/scrollReveal.js-master/scrollReveal.js'></script> 
+  <script>
+
+      window.scrollReveal = new scrollReveal();
+
+  </script>
 </body>
 </html>
