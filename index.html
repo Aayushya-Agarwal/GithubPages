@@ -43,8 +43,9 @@
     </div>
 <!--     <div class="seperator" data-1450="margin-top:-500px;height:800px" data-1100="margin-top:0px;height:0px"></div>
  -->    
-    <div class="seperator" data-scroll-reveal="ease move 500px"></div>
+    <div class="seperator" data-scroll-reveal="ease move 100px"></div>
     <div class="hollow">
+
       <img data-scroll-reveal="enter left move 300px, after 0.3s" src="img/hex_hollow.png">
       <img data-scroll-reveal="enter right move 500px, after 0.3s" src="img/hex_hollow.png">
       <img data-scroll-reveal="enter right move 500px, after 0.3s" src="img/hex_hollow.png">
@@ -56,9 +57,9 @@
     </div> -->
     
     <div class ="lines" >
-      <h3 data-scroll-reveal="after 2s, ease-in 200px and reset over .66s">café</h3>
+      <h3 data-scroll-reveal="after 0.3s, ease-in 200px and reset over .66s">café</h3>
       <h3 data-scroll-reveal="ease right move 200px, after 0.3s and reset over 1.0s">co-working space</h3>
-      <h3 data-scroll-reveal="ease left move 200px, after 0.3s and reset over 2.0s">public forum</h3>
+      <h3 data-scroll-reveal="ease left move 200px, after 0.3s and reset over 1.0s">public forum</h3>
     </div>
     
   </div>
@@ -70,16 +71,20 @@
  <!--  <div class="subscribe" data-1700="margin-top:800px" data-2400="margin-top:0px"> -->
   <form>
     Enter your email below and get shortlisted to our opening party
-    <input type="checkbox" name="subscribe" class="css-checkbox"><label class="css-label">Subscribe to news and updates from HanaHaus</label><br>
-     <input type="text" name="email"><br>
-     <input type="button" value="Enter">
+    <input id="checkbox"type="checkbox" name="subscribe" class="css-checkbox"><label class="css-label">Subscribe to news and updates from HanaHaus</label><br>
+     <input id="email"type="text" name="email"><br>
+     <input onclick="subscribe()" type="button" value="Enter">
   </form>
   
 
 </div>
-<div class="social" data-scroll-reveal="ease move 300px">
+<div class="social" data-scroll-reveal="ease move 200px">
 <!-- <div class="social" data-2400="margin-top:300px" data-3000="margin-top:0"> -->
-  <img src="img/social.png" alt="">
+  <!-- <img src="img/social.png" alt=""> -->
+  <p>SPREAD THE WORD  
+    <a id="facebook" href="http://www.facebook.com"><img src="images/facebook.png" /></a>
+    <a id="twitter" href="http://www.twitter.com"><img src="images/twitter.png" /></a>
+  </p>
 </div>
 <script src="js/script.js"></script>
 <script  type="text/javascript">
@@ -91,6 +96,8 @@
   <script>
 
       window.scrollReveal = new scrollReveal();
+
+
 
   </script>
 </body>
