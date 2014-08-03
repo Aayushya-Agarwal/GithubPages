@@ -117,29 +117,22 @@ path[class^="side"]
 	position: relative;
 
 }
-.lines h3:nth-child(1)
+.lines img:nth-child(1)
 {
 
-line-height: 400px;
 padding-right: 70%;
-text-align: right;
-background: url("../img/hex1.png")  no-repeat center center;
+
 }
-.lines h3:nth-child(2)
+.lines img:nth-child(2)
 {
 	
-line-height: 340px;
 padding-left: 55%;
-text-align: left;
-background: url("../img/hex2.png")  no-repeat center center;
 }
-.lines h3:nth-child(3)
+.lines img:nth-child(3)
 {
 	
-line-height: 460px;
 padding-right: 55%;
-text-align: right;
-background: url("../img/hex3.png")  no-repeat center center;
+
 }
 
 .hollow {
@@ -288,14 +281,14 @@ input[type=button]
 	float:left;
 }
 .start .summary {
-	margin-left: 500px;
 	padding-top: 250px;
 }
 
-.start .summary span {
+.start .summary p {
 	background-color:white;
 	padding: 12px 20px;
 	font-size: 20px;
+	line-height: 30px;
 	color: rgb(35,31,32); 
 }
 .start .summary p {
