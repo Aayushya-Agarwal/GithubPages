@@ -412,6 +412,8 @@
 		text-align: right; 
 		margin-top:0px;
 		height:30px;
+		color:white;
+		background-color:black; width:100%;
 	}
 
 	.location a{
