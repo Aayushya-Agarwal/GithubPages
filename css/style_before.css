@@ -423,4 +423,34 @@
 	.side_logo_img{
 		width:25%;
 	}
+
+	.mobile_info{
+		display:none;
+	}
+
+	.mobile_dine {
+		background: url("../img/dine.png")  no-repeat center center;
+		height:400px;
+		text-align:center;
+	}
+
+	.mobile_work {
+		background: url("../img/connect.png")  no-repeat center center;
+		height:400px;
+		text-align:center;
+	}
+
+	.mobile_learn {
+		background: url("../img/learn.png")  no-repeat center center;
+		height:400px;
+		text-align:center;
+	}
+
+
+	.mobile_play {
+		background: url("../img/play.png")  no-repeat center center;
+		height:400px;
+		text-align:center;
+	}
+
 }
