@@ -133,7 +133,7 @@
 	}
 	.lines img:nth-child(3)
 	{
-		margin-left: 19%;
+		margin-left: 14%;
 	}
 
 	.hollow {
@@ -216,7 +216,7 @@
 		background: url("../img/hex_play.png") no-repeat;
 		height:435px;
 		text-align:center;
-		margin-left: 22%;
+		margin-left: 10%;
 		margin-top: -100px;
 		width:375px;
 		}
