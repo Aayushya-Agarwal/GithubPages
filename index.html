@@ -8,6 +8,8 @@
   <script type="text/javascript" src="js/d3.v3.min.js"></script>
   <script type="text/javascript" src="js/skrollr.min.js"></script>
   <link href="css/style2.css" type="text/css" rel="stylesheet">
+  <link href="css/style_before.css" type="text/css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 <body>
@@ -17,63 +19,87 @@
   
   
 </div>
-<div class="info">
-  
 
-  <div class="start" data-300="height[swing]:500px" data-800="height[swing]:678px" data-1500="height[swing]:500px">
+<div class="start" data-300="height[swing]:500px" data-800="height[swing]:678px" data-1500="height[swing]:500px">
   
-  <img width="30%" id="side_logo" src="img/side_logo.png" alt="HanaHaus" data-0="margin-top[swing]:0px;" data-400="margin-top[swing]:-50px;" data-800="margin-top[swing]:-100px;" data-1500="margin-top[swing]:-50px">
+<!--   <div class="side_logo" data-0="margin-top[swing]:0px;" data-400="margin-top[swing]:-50px;" data-800="margin-top[swing]:-100px;" data-1500="margin-top[swing]:-50px">
+    <p><i>HanaHaus is a public café that hopes to bestow new life to the historic New Varsity Theater by providing unique services and events for the entrepreneurial & local community.<br>One that both salutes, and tinkers with, traditional cafe culture</i></p>
+  </div> -->
+<div class="location" >
+            <a  href="https://www.google.com/maps/place/456+University+Ave,+Palo+Alto,+CA+94301/@37.4475588,-122.1595498,17z/data=!3m1!4b1!4m2!3m1!1s0x808fbb38fcfe46f1:0xffd732ead2e767f3" >456 University Ave.</a>
+          </div>
+  <img class="side_logo_img" width="30%" id="side_logo" src="img/side_logo.png" alt="HanaHaus" data-0="margin-top[swing]:0px;" data-400="margin-top[swing]:-50px;" data-800="margin-top[swing]:-100px;" data-1500="margin-top[swing]:-50px">
+<!--   <div width:"30%" id="side_logo" data-0="margin-top[swing]:0px;" data-400="margin-top[swing]:-50px;" data-800="margin-top[swing]:-100px;" data-1500="margin-top[swing]:-50px" style="margin-bottom: -100px;position: relative;z-index: 99;float:left;background-image:img/side_logo.png; "></div> -->
   <div  width= "70%"class="summary">
     
-      <p width: "70%" data-400="opacity:0" data-600="opacity:0.9" data-800="opacity:0.9" data-1200="opacity:0"><i>HanaHaus is a public café that hopes to bestow new life to the historic New Varsity Theater by providing unique services and events for the entrepreneurial & local community.<br>One that both salutes, and tinkers with, traditional cafe culture</i></p>
+<!--       <p width: "70%" data-400="opacity:0" data-600="opacity:0.9" data-800="opacity:0.9" data-1200="opacity:0"><i>HanaHaus is a public café that hopes to bestow new life to the historic New Varsity Theater by providing unique services and events for the entrepreneurial & local community.<br>One that both salutes, and tinkers with, traditional cafe culture</i></p> -->
  <!--    
     
       <p><span data-500="opacity:0" data-700="opacity:1" data-900="opacity:1" data-1200="opacity:0">Providing unique services and events for the entrepreneurial & local community</span></p>
     
     
       <p><span data-600="opacity:0" data-800="opacity:1" data-1000="opacity:1" data-1200="opacity:0">One that both salutes, and tinkers with, traditional cafe culture</span></p>
-     -->  <div background-color='yellow' width='100%' padding-top='30px'>
-            <a  href="http://maps.google.com" style="padding:10px 0 10px 0; background-color:red; width:100%">Somewhere in Palo Alto</a>
-          </div>
+     -->  
 
   </div>
 </div>
+<div class="info">
   
-  <div class="summary">
+  
+  <div class="summaryBottom">
     <div class="question">
       <h2>What is HanaHaus?</h2>
     </div>
-    <div class="seperator" data-500="margin-top:-500px;height:800px" data-900="margin-top:0px;height:0px"></div>
+<!--     <div class="seperator" data-1450="margin-top:-500px;height:800px" data-1100="margin-top:0px;height:0px"></div>
+ -->    
+    <div class="seperator" data-scroll-reveal="ease move 100px"></div>
     <div class="hollow">
-      <img src="img/hex_hollow.png">
-      <img src="img/hex_hollow.png">
-      <img src="img/hex_hollow.png">
+      <div class="hollow1" data-scroll-reveal="after 1.0s, enter left and move 200px and reset over .66s"><p><font-color='#231f20'>Savour</font-color><br><span> Outdoor/Indoor cafe serving world-class coffee and nourishing food service in a bistro setting. Open to all for Breakfast, lunch and dinner.</span> </p></div>
+      <div class="hollow2" data-scroll-reveal="after 1.0s, enter right and move 200px and reset over .66s"><p><font-color='#231f20'>Collaborate</font-color><br> Resources for entrepreneurs to work on innovative technology featuring a help desk dedicated to connecting entrepreneurs, specialists, designers, hackers, and investors</p></div>
+      <div class="hollow3" data-scroll-reveal="after 1.0s, enter right and move 200px and reset over .66s"><p><font-color='#231f20'>Learn</font-color><br>Lectures and teachings by experts in areas of interest to technology entrepreneurs 
+</p></div>
+      <div class="hollow4" data-scroll-reveal="after 1.0s, enter left and move 200px and reset over .66s"><p><font-color='#231f20'>Play</font-color><br>Music, stand-up comedy, movies and other entertainment for the local community</p></div>
+
+
+<!--       <img src="img/hex_hollow.png">
+ -->  <!--     <img src="img/hex_hollow.png">
+      <img src="img/hex_hollow.png"> -->
     </div>
-    <div class="lines" data-500="margin-top:-550px;padding-top:550px" data-900="margin-top:20px;padding-top:0px;">
-      <img data-800="margin-top[swing]:700px" data-1300="margin-top:0px"></img>
-      <img data-900="margin-top[swing]:600px" data-1800="margin-top:-150px">
-      <img data-1300="margin-top[swing]:600px" data-1900="margin-top:-200px">
+
+    <div class ="lines" >
+
+
+
+<!--       <div syle=" background: url('img/hex1.png')  repeat-y center 0; margin-left:30%;">Dine</div>
+ -->  
+      <img data-scroll-reveal="after 1.0s, ease-in 200px and reset over .66s" src ="img/hex1.png">
+      <img data-scroll-reveal="after 1.0s, ease-in 200px and reset over .66s" src ="img/hex2.png">
+      <img data-scroll-reveal="after 1.0s, ease-in 200px and reset over .66s" src ="img/hex3.png">
+
     </div>
-    
     
   </div>
 </div> 
-<div class="more" >
-  <h3><i><a href="#">Find out more &#10095;&#10095;</a></i></h3>
-</div>
-<div class="seperator" data-1900="margin-top:-300px;height:800px" data-2200="margin-top:0px;height:50px"></div>
-<div class="subscribe" data-1700="margin-top:800px" data-2400="margin-top:0px">
+<!-- <div class="seperator" data-1900="margin-top:-300px;height:800px" data-2200="margin-top:0px;height:50px"></div>-->
+  <div class="seperator" data-scroll-reveal="ease move 500px"></div>
+  <div class="subscribe" data-scroll-reveal="ease move 400px">
+ <!--  <div class="subscribe" data-1700="margin-top:800px" data-2400="margin-top:0px"> -->
   <form>
     Enter your email below and get shortlisted to our opening party
-    <input type="checkbox" name="subscribe" class="css-checkbox"><label class="css-label">Subscribe to news and updates from HanaHaus</label><br>
-     <input type="text" name="email"><br>
-     <input type="button" value="Enter">
+    <input id="checkbox"type="checkbox" name="subscribe" class="css-checkbox"><label class="css-label">Subscribe to news and updates from HanaHaus</label><br>
+     <input id="email"type="text" name="email"><br>
+     <input onclick="subscribe()" type="button" value="Enter">
   </form>
   
 
 </div>
-<div class="social" data-2400="margin-top:300px" data-3000="margin-top:0">
-  <img src="img/social.png" alt="">
+<div class="social" data-scroll-reveal="ease move 200px">
+<!-- <div class="social" data-2400="margin-top:300px" data-3000="margin-top:0"> -->
+  <!-- <img src="img/social.png" alt=""> -->
+  <p>SPREAD THE WORD  
+    <a id="facebook" href="http://www.facebook.com"><img src="images/facebook.png" /></a>
+    <a id="twitter" href="http://www.twitter.com"><img src="images/twitter.png" /></a>
+  </p>
 </div>
 <script src="js/script.js"></script>
 <script  type="text/javascript">
@@ -81,5 +107,13 @@
     forceHeight: false
 });
 </script>
+  <script src='js/scrollReveal.js-master/scrollReveal.js'></script> 
+  <script>
+
+      window.scrollReveal = new scrollReveal();
+
+
+
+  </script>
 </body>
 </html>
