@@ -430,16 +430,18 @@
 		background-color:#231f20;
 		width:'100%';
 		padding-top:30px;
-		text-align: right; 
 		margin-top:0px;
 		height:30px;
 		color:white;
  		background-color:black; width:100%;
+ 		text-indent:75%;
+
 	}
 
 	.location a{
 		color:white;
-		background-color:black; width:100%;
+		background-color:black; 
+		width:100%;
 	}
 
 
