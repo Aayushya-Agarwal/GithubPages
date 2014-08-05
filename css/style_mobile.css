@@ -165,7 +165,7 @@
 	}
 
 	.hollow1 {
-		posistion:absolute;
+		position:absolute;
 		background: url("../img/hex_dine.png") no-repeat;
 		height:435px;
 		text-align:center;
@@ -181,7 +181,7 @@
 
 
 	.hollow2 {
-		posistion:absolute;
+		position:absolute;
 		background: url("../img/hex_connect.png") no-repeat;
 		text-align:center;
 		margin-left: 66%;
@@ -196,7 +196,7 @@
 	}
 
 	.hollow3 {
-		posistion:absolute;
+		position:absolute;
 		background: url("../img/hex_learn.png") no-repeat;
 		height:435px;
 		text-align:center;
@@ -212,7 +212,7 @@
 
 
 	.hollow4 {
-		posistion:absolute;
+		position:absolute;
 		background: url("../img/hex_play.png") no-repeat;
 		height:435px;
 		text-align:center;
