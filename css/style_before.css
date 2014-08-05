@@ -246,6 +246,11 @@
 		position: relative;
 		background: white;
 	}
+
+	.email {
+		text-align: center;
+	}
+
 	.subscribe {
 		margin: 50px auto;
 		height: 250px;
