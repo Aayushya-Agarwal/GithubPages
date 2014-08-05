@@ -411,12 +411,12 @@
 
 	.side_logo_fill{
 		background: url("../img/side_logo_empty.png")  no-repeat;
-		background-size: 150px 300px;
+		background-size: 100px 300px;
 		height:300px;
 		color:white;
 		z-index:99;
 		float:left;
-		width:250px;
+		width:100px;
 	}
 
 	.side_logo_fill p{
