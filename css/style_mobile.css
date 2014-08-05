@@ -381,7 +381,7 @@
 
 	.mobile_dine {
 		background: url("../img/dine.png")  no-repeat center center;
-		height:300px;
+		height:275px;
 		padding:0 20px 0 20px;
 		text-align:left;
 		margin-top:50px;
@@ -397,7 +397,7 @@
 	.mobile_learn {
 		background: url("../img/learn.png")  no-repeat center center;
 		padding:0 20px 0 20px;
-		height:300px;
+		height:200px;
 		text-align:left;
 	}
 
