@@ -409,8 +409,8 @@
 		background-color:#231f20;
 		width:'100%';
 		padding-top:30px;
- 		text-indent:75%;
 		margin-top:0px;
+		text-align:left;
 		height:30px;
 		color:white;
 		background-color:black; width:100%;
@@ -429,6 +429,7 @@
 		background: url("../img/dine.png")  no-repeat center center;
 		height:300px;
 		text-align:center;
+		margin-top:50px;
 	}
 
 	.mobile_work {
@@ -453,7 +454,7 @@
 	.side_logo_fill{
 		background: url("../img/side_logo_empty.png")  no-repeat;
 		background-size: 250px 400px;
-		height:600px;
+		height:400px;
 		color:white;
 		z-index:99;
 		float:left;
