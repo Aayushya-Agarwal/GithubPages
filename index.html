@@ -28,21 +28,6 @@
   </div>
 <div class="start" data-300="height[swing]:500px" data-800="height[swing]:678px" data-1500="height[swing]:900px">
 
-
-<!-- <div class="side_logo">
-  <p><h1>Hana Haus</h1>
-    <br>
-    <i>HanaHaus is a public café that hopes to bestow new life to the historic New Varsity Theater by providing unique services and events for the entrepreneurial & local community.<br>One that both salutes, and tinkers with, traditional cafe culture</i>
-  </p>
-</div> -->
-
-<!--   <img class="side_logo_img" width="30%" id="side_logo" src="img/side_logo.png" alt="HanaHaus" data-0="margin-top[swing]:0px;" data-400="margin-top[swing]:-50px;" data-800="margin-top[swing]:-100px;" data-1500="margin-top[swing]:-50px">
- -->
-
-
-<!--   <div width:"30%" id="side_logo" data-0="margin-top[swing]:0px;" data-400="margin-top[swing]:-50px;" data-800="margin-top[swing]:-100px;" data-1500="margin-top[swing]:-50px" style="margin-bottom: -100px;position: relative;z-index: 99;float:left;background-image:img/side_logo.png; "></div> -->
-
-
 </div>
 
   <div class="mobile_text">
@@ -61,8 +46,7 @@
     <div class="question">
       <h2>What is HanaHaus?</h2>
     </div>
-<!--     <div class="seperator" data-1450="margin-top:-500px;height:800px" data-1100="margin-top:0px;height:0px"></div>
- -->    
+
     <div class="seperator" data-scroll-reveal="ease move 100px"></div>
     <div class="hollow">
       <div class="hollow1" data-scroll-reveal="after 1.0s, enter left and move 200px and reset over .66s"><p><font color='#231f20'>Savour</font color><br><span> <font size='3'>Outdoor/Indoor cafe serving world-class coffee and nourishing food service in a bistro setting. Open to all for Breakfast, lunch and dinner.</font size></span> </p></div>
@@ -111,12 +95,8 @@
 
   <img width="100%" src="img/drawing.png">
 </div>
-
-<!-- <div class="seperator" data-1900="margin-top:-300px;height:800px" data-2200="margin-top:0px;height:50px"></div>-->
   <div class="seperator" data-scroll-reveal="ease move 500px"></div>
   <div class="subscribe" data-scroll-reveal="ease move 400px">
- <!--  <div class="subscribe" data-1700="margin-top:800px" data-2400="margin-top:0px"> -->
-
 <div class="email">
   <p>Enter your email below to get shortlisted for our opening party</p>
   <script type="text/javascript" src="http://form.jotform.us/jsform/42155483696161"></script>
@@ -124,8 +104,6 @@
 
 </div>
 <div class="social" data-scroll-reveal="ease move 200px">
-<!-- <div class="social" data-2400="margin-top:300px" data-3000="margin-top:0"> -->
-  <!-- <img src="img/social.png" alt=""> -->
   <p>SPREAD THE WORD  
     <a id="facebook" href="http://www.facebook.com"><img src="images/facebook.png" /></a>
     <a id="twitter" href="http://www.twitter.com"><img src="images/twitter.png" /></a>
@@ -133,9 +111,12 @@
 </div>
 <script src="js/script.js"></script>
 <script  type="text/javascript">
-//     var s = skrollr.init({
-//     forceHeight: false
-// });
+    if (!("ontouchstart" in document.documentElement)) {
+      var s = skrollr.init({
+      forceHeight: false
+    }); 
+   }
+
 </script>
   <script src='js/scrollReveal.js-master/scrollReveal.js'></script> 
   <script>
