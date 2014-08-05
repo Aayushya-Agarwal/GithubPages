@@ -40,21 +40,21 @@
   <a href="https://www.google.com/maps/place/456+University+Ave,+Palo+Alto,+CA+94301/@37.4475588,-122.1595498,17z/data=!3m1!4b1!4m2!3m1!1s0x808fbb38fcfe46f1:0xffd732ead2e767f3"><img src="img/map.png" alt=""> 456 University Ave, Palo Alto</a>
 </div>
 
-<div class="seperator"></div>
+<div class="seperator" data-scroll-reveal="ease move 100px"></div>
 <div class="info ">
   <div class="hexImages">
-    <img src="img/hex1.png" alt="">
-    <img src="img/hex2.png" alt="">
-    <img src="img/hex3.png" alt="">
+    <img data-scroll-reveal="after 1.0s, ease-in 200px and reset over .66s" src="img/hex1.png" alt="">
+    <img data-scroll-reveal="after 1.0s, ease-in 200px and reset over .66s" src="img/hex2.png" alt="">
+    <img data-scroll-reveal="after 1.0s, ease-in 200px and reset over .66s" src="img/hex3.png" alt="">
   </div>
   <div class="hexText clearfix">
-    <div class="outer">
+    <div class="outer" data-scroll-reveal="after 1.0s, enter left and move 200px and reset over .66s">
       <div class="inner">
         <h3>Savor</h3>
         <p>Outdoor/Indoor cafe serving world-class coffee and nourishing food service in a bistro setting. Open to all for Breakfast, lunch and dinner</p>
       </div>
     </div>
-    <div class="outer">
+    <div class="outer" data-scroll-reveal="after 1.0s, enter right and move 200px and reset over .66s">
       <div class="inner">
         <h3>Work</h3>
         <p> Resources for entrepreneurs
@@ -62,13 +62,13 @@
   and investors</p>
       </div>
     </div>
-    <div class="outer">
+    <div class="outer" data-scroll-reveal="after 1.0s, enter right and move 200px and reset over .66s">
       <div class="inner">
         <h3>Learn</h3>
         <p>Lectures and teachings by experts in areas of interest to technology entrepreneurs</p>
         </div>
     </div>
-    <div class="outer">
+    <div class="outer" data-scroll-reveal="after 1.0s, enter left and move 200px and reset over .66s">
       <div class="inner">
         <h3>Play</h3>
         <p>Music, stand-up comedy, movies and other entertainment for the local community</p>
@@ -79,22 +79,26 @@
     
   </div>
 </div> 
-<div class="seperator"></div>
+<div class="seperator" data-scroll-reveal="ease move 500px"></div>
 <div class="mobile drawing">
  </div>
-<div class="subscribe">
+<div class="subscribe" data-scroll-reveal="ease move 400px">
   <p>Enter your email below to get shortlisted for our opening party</p>
   <script type="text/javascript" src="http://form.jotform.us/jsform/42155483696161"></script>
 </div>
 
-<div class="social">
-
+<div class="social" data-scroll-reveal="ease move 200px">
   <h3>Spread The Word</h3>
   <a href=""><img src="img/facebook.png" alt=""></a>
   <a href=""><img src="img/twitter.png" alt=""></a>
   
 </div>
 <script src="js/script.js"></script>
-
+  <script src='js/scrollReveal.js-master/scrollReveal.js'></script> 
+  <script>
+    if (!("ontouchstart" in document.documentElement)) {
+      window.scrollReveal = new scrollReveal();
+    }
+  </script>
 </body>
 </html>
