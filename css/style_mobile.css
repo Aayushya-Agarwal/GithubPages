@@ -1,4 +1,4 @@
-@media only screen and (max-device-width: 480px){
+@media only screen and (max-device-width: 680px){
 		@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
 
 	body {
@@ -323,6 +323,7 @@
 	}
 
 	#facebook, #twitter {
+		margin-top:10px;
 		margin-left: 5px;
 	}
 	/*.social img {
