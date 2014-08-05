@@ -403,16 +403,16 @@ padding-left: 16%;
 
 .side_logo_fill{
 	background: url("../img/side_logo_empty.png")  no-repeat;
-	background-size: 250px 600px;
+	background-size: 300px 600px;
 	height:600px;
 	color:white;
 	z-index:99;
 	float:left;
-	width:250px;
+	width:300px;
 }
 .side_logo_fill p{
-	margin-left: 100px;
-	margin-top: 114px;
+	margin-left: 104px;
+	margin-top: 176px;
 	font-size: 15px;
 	margin-right: 23px;
 }
