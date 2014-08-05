@@ -1,3 +1,5 @@
+@media (min-width: 480px) {
+
 @import url(http://fonts.googleapis.com/css?family=Fjalla+One);
 
 body {
@@ -399,3 +401,4 @@ padding-left: 16%;
 	display:none;
 }
 
+}
