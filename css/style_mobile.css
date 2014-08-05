@@ -364,11 +364,11 @@
 		width:'100%';
 		padding-top:30px;
 		margin-top:0px;
-		text-align:left;
+		text-align:center;
 		height:30px;
 		color:white;
 		background-color:black; width:100%;
-		font-size:medium;
+		font-size:large;
 	}
 
 	.location a{
@@ -421,8 +421,8 @@
 
 	.side_logo_fill p{
 		margin-left:30px;
-		margin-top:250px;
-		font-size:15px;
+		margin-top:150px;
+		font-size:20px;
 	}
 
 	.side_logo_fill p i{
@@ -432,7 +432,8 @@
 	.mobile_text {
 		margin-top:50px;
 		padding: 0 20px 0 20px;
-		text-align:center;
+		text-align:left;
+
 	}
 
 
