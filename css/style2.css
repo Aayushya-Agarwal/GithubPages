@@ -267,13 +267,24 @@ path[class^="side"]
 	background: white;
 }
 
+.email {
+	text-align: center;
+}
+
+	.subscribe {
+		margin: 50px auto;
+		height: 250px;
+		width:100%;
+		z-index: -1;
+		overflow: hidden;
+}
+
 .social {
 	background-color: rgb(167,155,148);
 	text-align: center;
 	font-size: 30px;
 	color: white;
 	padding: 80px;
-
 }
 
 #facebook, #twitter {
