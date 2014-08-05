@@ -424,8 +424,12 @@ padding-left: 16%;
 .side_logo_fill p{
 	margin-left: 104px;
 	margin-top: 176px;
-	font-size: 15px;
+	font-size: 20px;
 	margin-right: 23px;
+}
+
+.side_logo_fill p i{
+	font-size: 15px
 }
 	.mobile_text {
 		display:none;
