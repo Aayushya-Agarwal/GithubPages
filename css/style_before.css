@@ -252,7 +252,7 @@
 	}
 
 	.subscribe {
-		margin: 50px auto;
+		margin: 150px auto;
 		height: 250px;
 		width:100%;
 		z-index: -1;
@@ -266,59 +266,6 @@
 		text-align: center;
 	} */
 
-	input {
-		border: 1px solid rgb(35,31,32);
-	}
-
-	input[type=text] {
-		width: 346px;
-		height:34px;
-		border: 1px solid rgb(167,155,148);
-		background-color: rgba(165,155,148,0.05);
-		margin: 20px auto;
-	}
-	input[type=checkbox] {
-								display:none;
-							}
-
-							input[type=checkbox].css-checkbox + label.css-label {
-								padding-left:17px;
-								height:12px; 
-								display:inline-block;
-								line-height:12px;
-								margin-top:15px;
-								background-repeat:no-repeat;
-								background-position: 0 0;
-								
-								vertical-align:middle;
-								cursor:pointer;
-
-							}
-
-							input[type=checkbox].css-checkbox:checked + label.css-label {
-								background-position: 0 -12px;
-							}
-							label.css-label {
-					background-image:url(http://csscheckbox.com/checkboxes/u/csscheckbox_593adae689b6e344cda220b0a046cec5.png);
-					-webkit-touch-callout: none;
-					-webkit-user-select: none;
-					-khtml-user-select: none;
-					-moz-user-select: none;
-					-ms-user-select: none;
-					user-select: none;
-				}
-	input[type=button]
-	{
-	    display: block;
-	   color: white;
-
-	   font-size: 20px;
-	    padding: 5px 15px;
-	    margin: 0 auto;
-	    background-color: rgb(35,31,32);
-	   font-family: 'Merriweather', serif;
-	    cursor: pointer;
-	}
 	.social {
 		background-color: rgb(167,155,148);
 		text-align: center;
