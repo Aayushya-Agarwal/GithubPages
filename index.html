@@ -139,9 +139,10 @@
 </script>
   <script src='js/scrollReveal.js-master/scrollReveal.js'></script> 
   <script>
-
+    if ("ontouchstart" in document.documentElement) {
+    } else {
       window.scrollReveal = new scrollReveal();
-
+    }
   </script>
 </body>
 </html>
