@@ -122,18 +122,19 @@
 	{
 
 		margin-left: 39%;
-	/*	height: 460px;
-	*/}
+		height: 460px;
+	}
 	.lines img:nth-child(2)
 	{
 		margin-left: 27%;
-	/*	height: 460px;
-	*/	margin-top: -100px;
+		height: 460px;
+		margin-top: -100px;
 
 	}
 	.lines img:nth-child(3)
 	{
 		margin-left: 14%;
+		height: 460px;
 	}
 
 	.hollow {
