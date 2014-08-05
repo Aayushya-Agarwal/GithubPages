@@ -247,19 +247,19 @@
 		background: white;
 	}
 	.subscribe {
-		margin: 0 auto;
-		height: 550px;
+		margin: 50px auto;
+		height: 250px;
 		width:100%;
 		z-index: -1;
 		overflow: hidden;
 	/*	background: url("../img/party.png") no-repeat center -30px; 
 	*/}
-	.subscribe form {
+/*	.subscribe form {
 		display: block;
 		width: 900px;
-		margin: 300px auto auto auto;
+		margin: auto auto auto auto;
 		text-align: center;
-	}
+	} */
 
 	input {
 		border: 1px solid rgb(35,31,32);
