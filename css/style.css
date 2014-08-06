@@ -221,12 +221,18 @@ input[type=submit] {
   background-color: #a79b94;
   padding-top: 85px;
   text-align: center; }
+  .social span {
+    display: inline-block; }
   .social h3, .social a {
     display: inline-block;
     vertical-align: middle;
     margin: 0px 5px;
     font-size: 2em;
     color: #fff; }
+
+.success {
+  text-align: center;
+  display: none; }
 
 @media (min-width: 768px) {
   .hexText {
@@ -284,6 +290,20 @@ input[type=submit] {
   .hexText div.outer:nth-child(3) {
     top: 140px;
     margin-left: 50%; } }
+@media (max-width: 767px) and (orientation: landscape) {
+  .intro .introSide {
+    max-width: 35%; } }
+@media (max-width: 480px) {
+  .intro .introSide {
+    max-width: 60%; }
+    .intro .introSide h2 {
+      font-size: 1.8em; }
+
+  input[type=text] {
+    width: 246px; }
+
+  .location a {
+    padding: 20px 0; } }
 @media (max-width: 767px) {
   .mobile {
     display: inherit; }
