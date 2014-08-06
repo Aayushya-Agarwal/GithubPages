@@ -105,7 +105,7 @@ path[class^="side"] {
     background-size: 100%; }
     .intro .introSide h2 {
       font-size: 4em;
-      margin: 391px auto 30px 130px; }
+      margin: 391px auto 30px 106px; }
     .intro .introSide p {
       font-style: italic;
       margin: 0px 25px auto 180px;
@@ -119,7 +119,7 @@ path[class^="side"] {
     display: block;
     text-align: right;
     color: white;
-    margin: 0 100px;
+    margin: 0 50px;
     padding: 20px;
     font-family: "Fjalla One", sans-serif;
     font-size: 1.3em;
@@ -260,18 +260,18 @@ input[type=button] {
   .hexImages img:nth-child(1) {
     margin-top: 230px; }
   .hexImages img:nth-child(3) {
-    margin-top: 300px;
-    padding-left: 50px; }
+    margin-top: 344px;
+    padding-left: 16px; }
 
   .hexText div.outer:nth-child(1) {
     margin-right: 50%;
     margin-top: -100px; }
   .hexText div.outer:nth-child(2) {
-    margin-left: 60%;
-    top: 180px; }
+    margin-left: 50%;
+    top: 216px; }
   .hexText div.outer:nth-child(3) {
-    top: 120px;
-    margin-left: 60%; } }
+    top: 136px;
+    margin-left: 50%; } }
 @media (max-width: 767px) {
   .mobile {
     display: inherit; }
