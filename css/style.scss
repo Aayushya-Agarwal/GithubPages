@@ -280,6 +280,11 @@ input[type=submit]
 	}
 
 }
+.success{
+  text-align: center;
+  display:none;
+}
+
 @media (min-width: 768px) {
 
 	.hexText{
@@ -361,6 +366,21 @@ input[type=submit]
 			margin-left: 50%;
 		}
 		
+	}
+}
+@media (max-width: 767px) and (orientation : landscape) {
+	.intro .introSide {
+		max-width: 35%;
+	}
+
+}
+
+@media (max-width: 480px) {
+	.intro .introSide {
+		max-width: 60%;
+		h2 {
+			font-size: 1.8em;
+		}
 	}
 }
 @media (max-width: 767px) {
