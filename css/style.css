@@ -167,9 +167,8 @@ path[class^="side"] {
 input {
   border: 1px solid #231f20; }
 
-textarea:focus, input:focus{
-    outline: 0;
-}
+textarea:focus, input:focus {
+  outline: 0; }
 
 input[type=text] {
   width: 346px;
@@ -263,6 +262,12 @@ input[type=submit] {
         margin-right: 50%;
         top: -150px; } }
 @media (min-width: 768px) and (max-width: 992px) {
+  .intro .introSide h2 {
+    font-size: 3.5em; }
+
+  .location a {
+    margin: 0 0 0 100px; }
+
   .hexImages img:nth-child(1) {
     margin-top: 230px; }
   .hexImages img:nth-child(3) {

@@ -332,6 +332,9 @@ input[type=submit]
 	.intro .introSide h2 {
     	font-size: 3.5em;
   	}
+  	.location a {
+  		margin: 0 0 0 100px;
+  	}
 	.hexImages{
 		img{
 			&:nth-child(1) {
