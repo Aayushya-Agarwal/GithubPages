@@ -262,7 +262,7 @@ input[type=submit] {
         float: right;
         margin-right: 50%;
         top: -150px; } }
-@media (min-width: 768px) and (max-width: 1320px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .hexImages img:nth-child(1) {
     margin-top: 230px; }
   .hexImages img:nth-child(3) {
@@ -292,7 +292,7 @@ input[type=submit] {
     height: 288px; }
     .intro .introSide {
       margin-top: -100px;
-      height: 490px; }
+      height: 450px; }
       .intro .introSide h2 {
         font-size: 2em;
         margin: 200px auto 30px 50px; }
