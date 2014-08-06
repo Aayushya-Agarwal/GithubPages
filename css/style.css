@@ -164,6 +164,13 @@ path[class^="side"] {
   margin: 50px auto;
   text-align: center; }
 
+.success{
+  color:green;
+  margin: 10px auto;
+  text-align: center;
+  display:none;
+}
+
 input {
   border: 1px solid #231f20; }
 

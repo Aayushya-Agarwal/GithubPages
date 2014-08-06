@@ -7,7 +7,7 @@
  
   <script type="text/javascript" src="js/d3.v3.min.js"></script>
   <script type="text/javascript" src="js/skrollr.min.js"></script>
-  
+  <script type="text/javascript" src="http://codeorigin.jquery.com/jquery-1.10.2.min.js"></script>
   <link href="css/style.css" type="text/css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -82,23 +82,21 @@
 <div class="mobile drawing">
  </div>
 <div class="subscribe" data-scroll-reveal="ease move 400px">
-  <form action="http://getsimpleform.com/messages?form_api_token=14ddc2fa949137479ce6859fb788d3e9" method="post">
-    <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-    <input type='hidden' name='redirect_to' value='thank_you.html' />
-      <p>Enter your email below and get shortlisted to our opening party.</p>
-       <input type="text" name="email"><br>
-       <input type="submit" value="Enter">
+  <form action="#" id="ajax-form">
+    <p>Enter your email below and get shortlisted to our opening party.</p>
+    <input type="text" id="email" name="email"><br>
+    <input type="submit" value="Enter">
+    <p class="success" id="success">Thank You for subscribing</p>
   </form>
 </div>
-
 <div class="social" data-scroll-reveal="ease move 200px">
   <h3>Spread The Word</h3>
-  <a href=""><img src="img/facebook.png" alt=""></a>
-  <a href=""><img src="img/twitter.png" alt=""></a>
+  <a href="https://www.facebook.com/hanahaus"><img src="img/facebook.png" alt=""></a>
+  <a href="https://twitter.com/HanaHausBayArea"><img src="img/twitter.png" alt=""></a>
   
 </div>
 
-<!--
+
 <script src="js/script.js"></script>
   <script src='js/scrollReveal.js-master/scrollReveal.js'></script> 
   <script>
@@ -106,7 +104,23 @@
       window.scrollReveal = new scrollReveal();
     }
   </script>
--->
+<script type="text/javascript"> 
+      $('#ajax-form').submit(function(){
+        console.log($("#email").val());
+        $.ajax({
+          dataType: 'jsonp',
+          url: "http://getsimpleform.com/messages/ajax?form_api_token=14ddc2fa949137479ce6859fb788d3e9",
+          data: {
+            email: $("#email").val(),
+          }
+        }).done(function() {
+          document.getElementById("success").style.display = 'block';
+        });
+        return false;
+      })
+
+    
+</script>
 <script>window.onorientationchange = function() { var orientation = window.orientation; switch(orientation) { case 0: window.location.reload(); break; case 90: window.location.reload(); break; case -90: window.location.reload(); break; } }</script>
 </body>
 </html>
