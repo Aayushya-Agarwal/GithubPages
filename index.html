@@ -4,7 +4,8 @@
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <title>HanaHaus, a public cafe</title>
  <link href='http://fonts.googleapis.com/css?family=Fjalla+One|Merriweather:400,400italic' rel='stylesheet' type='text/css'>
- 
+ <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+
   <script type="text/javascript" src="js/d3.v3.min.js"></script>
   <script type="text/javascript" src="js/skrollr.min.js"></script>
   <script type="text/javascript" src="http://codeorigin.jquery.com/jquery-1.10.2.min.js"></script>
@@ -22,7 +23,7 @@
   <div class="intro">
     <div class="introSide">
       <h2>HanaHaus</h2>
-      <p>A community of purpose. We are defining a new Caf&egrave; experience where creative individuals and entrepreneurs can come together to meet, socialize, share ideas and connect with experts
+      <p>A community of purpose defining a new Caf&egrave; experience where creative individuals and entrepreneurs can come together to meet, socialize, share ideas and connect with experts
     </p>
     </div>
   
@@ -42,18 +43,18 @@
 <div class="seperator" data-scroll-reveal="ease move 100px"></div>
 <div class="info ">
   <div class="hexImages">
-    <img data-scroll-reveal="after 1.0s, ease-in 200px and reset over .66s" src="img/hex1.png" alt="">
-    <img data-scroll-reveal="after 1.0s, ease-in 200px and reset over .66s" src="img/hex2.png" alt="">
-    <img data-scroll-reveal="after 1.0s, ease-in 200px and reset over .66s" src="img/hex3.png" alt="">
+    <img data-scroll-reveal="ease-in 200px and reset over .66s" src="img/hex1.png" alt="">
+    <img data-scroll-reveal="ease-in 200px and reset over .66s" src="img/hex2.png" alt="">
+    <img data-scroll-reveal="ease-in 200px and reset over .66s" src="img/hex3.png" alt="">
   </div>
   <div class="hexText clearfix">
-    <div class="outer" data-scroll-reveal="after 1.0s, enter left and move 200px and reset over .66s">
+    <div class="outer" data-scroll-reveal="ease-in 200px and reset over .66s">
       <div class="inner">
         <h3>Savor</h3>
         <p>Outdoor/Indoor cafe serving world-class coffee and nourishing food service in a bistro setting. Open to all for breakfast, lunch and dinner</p>
       </div>
     </div>
-    <div class="outer" data-scroll-reveal="after 1.0s, enter right and move 200px and reset over .66s">
+    <div class="outer" data-scroll-reveal="ease-in 200px and reset over .66s">
       <div class="inner">
         <h3>Work</h3>
         <p> Resources for entrepreneurs
@@ -61,13 +62,13 @@
   and investors</p>
       </div>
     </div>
-    <div class="outer" data-scroll-reveal="after 1.0s, enter right and move 200px and reset over .66s">
+    <div class="outer" data-scroll-reveal="ease-in 200px and reset over .66s">
       <div class="inner">
         <h3>Learn</h3>
         <p>Lectures and teachings by experts in areas of interest to technology entrepreneurs</p>
         </div>
     </div>
-    <div class="outer" data-scroll-reveal="after 1.0s, enter left and move 200px and reset over .66s">
+    <div class="outer" data-scroll-reveal="ease-in 200px and reset over .66s">
       <div class="inner">
         <h3>Play</h3>
         <p>Music, stand-up comedy, movies and other entertainment for the local community</p>
@@ -78,16 +79,16 @@
     
   </div>
 </div> 
-<div class="seperator" data-scroll-reveal="ease move 500px"></div>
+<div class="seperator" data-scroll-reveal="ease move 200px"></div>
 <div class="mobile drawing">
  </div>
-<div class="subscribe" data-scroll-reveal="ease move 400px">
+<div class="subscribe" data-scroll-reveal="ease move 300px">
   <form action="#" id="ajax-form">
     <p>Enter your email below and get shortlisted to our opening party.</p>
     <input type="text" id="email" name="email"><br>
     <input type="submit" value="Enter">
-    <p class="success" id="success">Thank You for subscribing</p>
   </form>
+  <p class="success" id="success">Thank you for subscribing.<br> We'll keep you posted.</p>
 </div>
 <div class="social" data-scroll-reveal="ease move 200px">
   <h3>Spread The Word</h3>
@@ -114,6 +115,7 @@
             email: $("#email").val(),
           }
         }).done(function() {
+          document.getElementById("ajax-form").style.display = 'none';
           document.getElementById("success").style.display = 'block';
         });
         return false;

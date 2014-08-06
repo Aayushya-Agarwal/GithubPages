@@ -165,8 +165,6 @@ path[class^="side"] {
   text-align: center; }
 
 .success{
-  color:green;
-  margin: 10px auto;
   text-align: center;
   display:none;
 }
