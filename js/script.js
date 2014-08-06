@@ -1,6 +1,7 @@
 /*
 
 */
+var accelerometerChecked=false;
 var svg = d3.select("svg");
 svg.style("height", window.innerHeight);
 
@@ -143,6 +144,10 @@ var active, activeX = svgWidth/2, activeY = svgHeight/2;
 function onWindowDeviceOrientation( event ) {
 
   if ( event.beta ) {
+    if (!accelerometerChecked && !document.getElementsByTagName("body")[0].classList.contains("accelerometer")) {
+      document.getElementsByTagName("body")[0].classList.add("accelerometer");
+      accelerometerChecked=true;
+    }
     var h = Math.round(hPos(event.gamma));
     var v = Math.round(vPos(event.beta));
   

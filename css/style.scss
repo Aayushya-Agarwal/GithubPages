@@ -48,7 +48,7 @@ path[class^="side"]
 	-o-transition: fill 0.1s ease !important;
 	transition: fill 0.1s ease !important;
 }
-.mobile .active {
+.accelerometer .active {
 	-webkit-transition: fill 0s !important;
 	-moz-transition: fill 0s !important;
 	-o-transition: fill 0s !important;
@@ -85,7 +85,7 @@ path[class^="side"]
 	-o-transition: fill 20s ease;
 	transition: fill 20s ease;
 }
-.mobile .mask {
+.accelerometer .mask {
 	fill:black;
 	-webkit-transition: fill 30s ease;
 	-moz-transition: fill 30s ease;
