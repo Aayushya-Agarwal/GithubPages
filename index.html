@@ -7,6 +7,15 @@
  
   <script type="text/javascript" src="js/d3.v3.min.js"></script>
   <script type="text/javascript" src="js/skrollr.min.js"></script>
+  <script>
+  $(window).on('orientationchange', function(e) {
+     $.mobile.changePage(window.location.href, {
+        allowSamePageTransition: true,
+        transition: 'none',
+        reloadPage: true
+    });
+});
+</script>
   
   <link href="css/style.css" type="text/css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
