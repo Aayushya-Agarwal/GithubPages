@@ -270,10 +270,13 @@ input[type=submit]
 	background-color: $lightBrown;
 	padding-top:85px;
 	text-align: center;
-
+	span {
+		display: inline-block;
+	}
 	h3, a {
 		display: inline-block;
 		vertical-align: middle;
+
 		margin: 0px 5px;
 		font-size: 2em;
 		color: #fff;
@@ -381,6 +384,12 @@ input[type=submit]
 		h2 {
 			font-size: 1.8em;
 		}
+	}
+	input[type=text] {
+		width: 246px;
+	}
+	.location a {
+		padding: 20px 0;
 	}
 }
 @media (max-width: 767px) {

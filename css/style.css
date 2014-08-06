@@ -221,6 +221,8 @@ input[type=submit] {
   background-color: #a79b94;
   padding-top: 85px;
   text-align: center; }
+  .social span {
+    display: inline-block; }
   .social h3, .social a {
     display: inline-block;
     vertical-align: middle;
@@ -295,7 +297,13 @@ input[type=submit] {
   .intro .introSide {
     max-width: 60%; }
     .intro .introSide h2 {
-      font-size: 1.8em; } }
+      font-size: 1.8em; }
+
+  input[type=text] {
+    width: 246px; }
+
+  .location a {
+    padding: 20px 0; } }
 @media (max-width: 767px) {
   .mobile {
     display: inherit; }
