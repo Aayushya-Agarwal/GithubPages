@@ -131,7 +131,8 @@ path[class^="side"] {
 
 .hexImages {
   position: absolute;
-  width: 100%; }
+  width: 100%;
+  overflow: hidden; }
   .hexImages img {
     display: block;
     margin: auto; }
@@ -163,11 +164,6 @@ path[class^="side"] {
   display: block;
   margin: 50px auto;
   text-align: center; }
-
-.success{
-  text-align: center;
-  display:none;
-}
 
 input {
   border: 1px solid #231f20; }
@@ -283,11 +279,11 @@ input[type=submit] {
     margin-right: 50%;
     margin-top: -100px; }
   .hexText div.outer:nth-child(2) {
-    margin-left: 60%;
-    top: 180px; }
+    margin-left: 50%;
+    top: 200px; }
   .hexText div.outer:nth-child(3) {
-    top: 120px;
-    margin-left: 60%; } }
+    top: 140px;
+    margin-left: 50%; } }
 @media (max-width: 767px) {
   .mobile {
     display: inherit; }
