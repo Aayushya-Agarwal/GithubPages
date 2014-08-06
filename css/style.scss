@@ -289,7 +289,9 @@ input[type=submit]
 }
 
 @media (min-width: 768px) {
-
+	.bottom {
+		height: 100px;
+	}
 	.hexText{
 		position: relative;
 		margin-bottom: -150px;
