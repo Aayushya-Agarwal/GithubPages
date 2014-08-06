@@ -324,7 +324,10 @@ input[type=submit]
 		}
 	}
 }
-@media (min-width: 768px) and (max-width: 1320px) {
+@media (min-width: 768px) and (max-width: 992px) {
+	.intro .introSide h2 {
+    	font-size: 3.5em;
+  	}
 	.hexImages{
 		img{
 			&:nth-child(1) {
