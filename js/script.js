@@ -22,7 +22,7 @@ var colors1 = ["white", "rgb(240,240,240)", "rgb(247,247,247)"];
 var colors2 = ["rgb(91,201,227)", "rgb(222,225,78)", "rgb(167,155,148)"];
 
 var r = 80;
-if (svgWidth < 480) {
+if (svgWidth <= 600) {
   r = 40;
  
 }
