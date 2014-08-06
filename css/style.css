@@ -98,7 +98,7 @@ path[class^="side"] {
     z-index: 100;
     position: absolute;
     width: 457px;
-    max-width: 50%;
+    max-width: 33%;
     height: 912px;
     overflow: visible;
     background: url("../img/side_logo_empty.png") no-repeat center center;
