@@ -167,6 +167,10 @@ path[class^="side"] {
 input {
   border: 1px solid #231f20; }
 
+input.middle:focus {
+    outline-width: 0;
+}
+
 input[type=text] {
   width: 346px;
   height: 34px;
