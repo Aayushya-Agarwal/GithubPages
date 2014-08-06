@@ -209,6 +209,10 @@ input {
 	border: 1px solid rgb(35,31,32);
 }
 
+textarea:focus, input:focus{
+    outline: 0;
+}
+
 input[type=text] {
 	width: 346px;
 	height:34px;
