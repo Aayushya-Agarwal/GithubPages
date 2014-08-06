@@ -166,6 +166,7 @@ path[class^="side"]
 .hexImages{
 	position: absolute;
 	width: 100%;
+	overflow: hidden;
 	img{
 		display: block;
 		margin: auto;
@@ -352,12 +353,12 @@ input[type=submit]
 			margin-top: -100px;
 		}
 		&:nth-child(2) {
-			margin-left:60%;
-			top: 180px;
+			margin-left:50%;
+			top: 200px;
 		}
 		&:nth-child(3) {
-			top: 120px;
-			margin-left: 60%;
+			top: 140px;
+			margin-left: 50%;
 		}
 		
 	}
