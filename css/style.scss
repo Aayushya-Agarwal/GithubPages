@@ -215,6 +215,8 @@ input[type=text] {
 	border: 1px solid $brown;
 	background-color: rgba($brown,0.05);
 	margin: 20px auto;
+	font-size: 1.2em;
+	padding: 0 10px;
 }
 input[type=checkbox] {
 	display:none;
@@ -246,12 +248,12 @@ label.css-label {
 	-ms-user-select: none;
 	user-select: none;
 }
-input[type=button]
+input[type=submit]
 {
     display: block;
    color: white;
 
-   font-size: 20px;
+   font-size: 1.2em;
     padding: 5px 15px;
     margin: 0 auto;
     background-color: $black;

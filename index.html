@@ -82,9 +82,14 @@
 <div class="mobile drawing">
  </div>
 <div class="subscribe" data-scroll-reveal="ease move 400px">
-  <form>
-   <p>Enter your email below to get shortlisted for our opening party</p>
-<script type="text/javascript" src="http://form.jotform.us/jsform/42155483696161"></script></div>
+  <form action="http://getsimpleform.com/messages?form_api_token=14ddc2fa949137479ce6859fb788d3e9" method="post">
+    <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+    <input type='hidden' name='redirect_to' value='thank_you.html' />
+      <p>Enter your email below and get shortlisted to our opening party.</p>
+       <input type="text" name="email"><br>
+       <input type="submit" value="Enter">
+  </form>
+</div>
 
 <div class="social" data-scroll-reveal="ease move 200px">
   <h3>Spread The Word</h3>
@@ -92,6 +97,8 @@
   <a href=""><img src="img/twitter.png" alt=""></a>
   
 </div>
+
+<!--
 <script src="js/script.js"></script>
   <script src='js/scrollReveal.js-master/scrollReveal.js'></script> 
   <script>
@@ -99,7 +106,7 @@
       window.scrollReveal = new scrollReveal();
     }
   </script>
-
+-->
 <script>window.onorientationchange = function() { var orientation = window.orientation; switch(orientation) { case 0: window.location.reload(); break; case 90: window.location.reload(); break; case -90: window.location.reload(); break; } }</script>
 </body>
 </html>
