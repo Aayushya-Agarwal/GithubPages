@@ -242,9 +242,6 @@ input[type=submit] {
   display: none; }
 
 @media (min-width: 768px) {
-  .bottom {
-    margin-top: 120px; }
-
   .hexText {
     position: relative;
     margin-bottom: -150px; }
@@ -320,7 +317,10 @@ input[type=submit] {
     -webkit-transform: translate(0, 140px);
     /* Chrome, Safari, Opera */
     transform: translate(0, 140px);
-    margin-left: 50%; } }
+    margin-left: 50%; }
+
+  .bottom {
+    margin-top: 120px; } }
 @media (max-width: 767px) and (orientation: landscape) {
   .intro .introSide {
     max-width: 35%; } }
