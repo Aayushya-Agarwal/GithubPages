@@ -1,7 +1,9 @@
 /*
 
 */
-
+var s = skrollr.init({
+    forceHeight: false
+});
 
 var accelerometerChecked=false;
 var hPos, vPos;
