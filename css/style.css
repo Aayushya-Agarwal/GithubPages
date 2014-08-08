@@ -261,32 +261,33 @@ input[type=submit] {
       .hexText div.outer:nth-child(1) {
         background: url("../img/hex_dine.png") center center no-repeat;
         margin-right: 65%;
+        clear: both;
         float: right; }
       .hexText div.outer:nth-child(2) {
         background: url("../img/hex_connect.png") center center no-repeat;
         -ms-transform: translate(0, -254px);
-        /* IE 9 */
         -webkit-transform: translate(0, -254px);
-        /* Chrome, Safari, Opera */
+        -moz-transform: translate(0, -254px);
         transform: translate(0, -254px);
         /*top: -254px;*/
-        margin-left: 65%; }
+        margin-left: 65%;
+        clear: both; }
       .hexText div.outer:nth-child(3) {
         background: url("../img/hex_learn.png") center center no-repeat;
         -ms-transform: translate(0, -300px);
-        /* IE 9 */
         -webkit-transform: translate(0, -300px);
-        /* Chrome, Safari, Opera */
+        -moz-transform: translate(0, -300px);
         transform: translate(0, -300px);
-        margin-left: 65%; }
+        margin-left: 65%;
+        clear: both; }
       .hexText div.outer:nth-child(4) {
         background: url("../img/hex_play.png") center center no-repeat;
         float: right;
         margin-right: 50%;
+        clear: both;
         -ms-transform: translate(0, -150px);
-        /* IE 9 */
         -webkit-transform: translate(0, -150px);
-        /* Chrome, Safari, Opera */
+        -moz-transform: translate(0, -150px);
         transform: translate(0, -150px); } }
 @media (min-width: 768px) and (max-width: 992px) {
   .intro .introSide h2 {
@@ -307,15 +308,13 @@ input[type=submit] {
   .hexText div.outer:nth-child(2) {
     margin-left: 50%;
     -ms-transform: translate(0, 200px);
-    /* IE 9 */
     -webkit-transform: translate(0, 200px);
-    /* Chrome, Safari, Opera */
+    -moz-transform: translate(0, 200px);
     transform: translate(0, 200px); }
   .hexText div.outer:nth-child(3) {
     -ms-transform: translate(0, 140px);
-    /* IE 9 */
     -webkit-transform: translate(0, 140px);
-    /* Chrome, Safari, Opera */
+    -moz-transform: translate(0, 140px);
     transform: translate(0, 140px);
     margin-left: 50%; }
 

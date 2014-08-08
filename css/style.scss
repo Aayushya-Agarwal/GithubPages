@@ -6,9 +6,10 @@ $font-body: 'Merriweather', serif;
 
 
 @mixin translate($x, $y) {
-	-ms-transform: translate($x, $y); /* IE 9 */
-	-webkit-transform: translate($x, $y); /* Chrome, Safari, Opera */
-	transform:translate($x, $y);
+	-ms-transform: translate($x, $y);
+	-webkit-transform: translate($x, $y);
+	-moz-transform: translate($x, $y);
+	transform: translate($x, $y);
 }
 
 
@@ -330,6 +331,7 @@ input[type=submit]
 			&:nth-child(1) {
 				background: url('../img/hex_dine.png') center center no-repeat;
 				margin-right: 65%;
+				clear: both;
 				float: right;
 			}
 			&:nth-child(2) {
@@ -337,17 +339,19 @@ input[type=submit]
 				@include translate(0, -254px);
 				/*top: -254px;*/
 				margin-left: 65%;
-				
+				clear: both;
 			}
 			&:nth-child(3) {
 				background: url('../img/hex_learn.png') center center no-repeat;
 				@include translate(0, -300px);
 				margin-left:65%;
+				clear: both;
 			}
 			&:nth-child(4) {
 				background: url('../img/hex_play.png') center center no-repeat;
 				float: right;
 				margin-right: 50%;
+				clear: both;
 				@include translate(0, -150px);
 			}
 		}
