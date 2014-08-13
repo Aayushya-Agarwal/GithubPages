@@ -104,7 +104,7 @@ path[class^="side"]
 
 .accelerometer .mask {
 	fill:black;
-	@include fillTransition(30s);
+	@include transition(fill, 30s);
 	@include transitionDelay(0s);
 }
 
