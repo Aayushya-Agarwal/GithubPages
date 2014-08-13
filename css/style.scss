@@ -6,13 +6,27 @@ $font-body: 'Merriweather', serif;
 
 
 @mixin translate($x, $y) {
+	-o-transform:translate($x, $y);
 	-ms-transform: translate($x, $y);
 	-webkit-transform: translate($x, $y);
 	-moz-transform: translate($x, $y);
 	transform: translate($x, $y);
 }
 
-
+@mixin transition($property, $duration, $important:"") {
+	-ms-transition: $property $duration ease-in-out unquote($important);
+	-webkit-transition: $property $duration ease-in-out unquote($important);
+	-moz-transition: $property $duration ease-in-out unquote($important);
+	-o-transition: $property $duration ease-in-out unquote($important);
+	transition: $property $duration ease-in-out unquote($important);
+}
+@mixin transitionDelay($delay) {
+	-webkit-transition-delay: $delay;
+	-moz-transition-delay: $delay;
+	-o-transition-delay: $delay;
+	-ms-transition-delay: $delay;
+	transition-delay: $delay;
+}
 body {
 	margin:0;
 	font-family: $font-body;
@@ -48,24 +62,15 @@ h1, h2, h3 {
 }
 path[class^="side"]
 {
-	-webkit-transition: fill 2s ease;
-	-moz-transition: fill 2s ease;
-	-o-transition: fill 2s ease;
-	transition: fill 2s ease;
+	@include transition(fill, 2s);
 }
 
 
 .active {
-	-webkit-transition: fill 0.1s ease !important;
-	-moz-transition: fill 0.1s ease !important;
-	-o-transition: fill 0.1s ease !important;
-	transition: fill 0.1s ease !important;
+	@include transition(fill, 0.1s, '!important');
 }
 .accelerometer .active {
-	-webkit-transition: fill 0s !important;
-	-moz-transition: fill 0s !important;
-	-o-transition: fill 0s !important;
-	transition: fill 0s !important;
+	@include transition(fill, 0s, '!important');
 }
 .side0 {
 	fill:white;
@@ -93,18 +98,16 @@ path[class^="side"]
 
 .mask {
 	fill:black;
-	-webkit-transition: fill 20s ease;
-	-moz-transition: fill 20s ease;
-	-o-transition: fill 20s ease;
-	transition: fill 20s ease;
+	@include transition(fill, 25s);
+	@include transitionDelay(5s);
 }
+
 .accelerometer .mask {
 	fill:black;
-	-webkit-transition: fill 30s ease;
-	-moz-transition: fill 30s ease;
-	-o-transition: fill 30s ease;
-	transition: fill 30s ease;
+	@include fillTransition(30s);
+	@include transitionDelay(0s);
 }
+
 .mask.active {
 	fill:white;
 }
