@@ -171,7 +171,7 @@ path[class^="side"] {
 
 .seperator {
   background: url("../img/border.png") repeat-y center 0;
-  height: 150px;
+  height: 100px;
   position: relative;
   margin: 50px auto 30px auto; }
 
